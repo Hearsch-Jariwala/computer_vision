@@ -12,6 +12,20 @@ Utilizing this paper's algorithm we added a GRAD-CAM for more interpretability t
 1. Clone this repo locally `git clone git@github.com:robbjr99/AIPI540-Module1Project.git`
 2. Create virtual environment `python -m venv venv_name`
 3. Install the libraries and dependencies `pip install -r requirements.txt`
+4. Run main python notebook
+
+## Usage   
+#### Training  
+
+```bash
+python train.py --data_dir UCLA-protest/ --batch_size 32 --lr 0.002 --print_freq 100 --epochs 100 --cuda
+```
+
+#### Evaluation
+
+```bash
+python pred.py --img_dir path/to/some/image/directory/ --output_csvpath result.csv --model model_best.pth.tar --cuda
+```
 
 ## Authors
 - Robert Baldoni
